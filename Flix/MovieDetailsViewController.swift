@@ -12,10 +12,18 @@ class MovieDetailsViewController: UIViewController {
     
     var movie: [String:Any]!
     @IBOutlet weak var backdropView: UIImageView!
-    @IBOutlet weak var posterView: UIImageView!
+    @IBOutlet weak var posterView: UIImageView! {
+        didSet {
+            posterView.isUserInteractionEnabled = true
+        }
+    }
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var synopsisLabel: UILabel!
     
+    @IBAction func tapPoster(_ sender: UITapGestureRecognizer) {
+    }
+    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -36,15 +44,17 @@ class MovieDetailsViewController: UIViewController {
         synopsisLabel.sizeToFit()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+        // find selexted movie
 
+        // pass to movie details
+        let trailerViewController = segue.destination as! TrailerViewController
+        
+
+        trailerViewController.movie = self.movie["id"] as! Int
+
+
+    }
+    
 }
