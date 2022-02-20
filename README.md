@@ -15,7 +15,7 @@ Flix is an app that allows users to browse movies from the [The Movie Database A
 - [x] (2pts) In the detail view, when the user taps the poster, a new screen is presented modally where they can view the trailer.
 
 ### App Walkthrough GIF
-<img src="http://g.recordit.co/5QoIS5fIqR.gif" width=250><br>
+<img src="http://g.recordit.co/a4wppVHj1j.gif" width=250><br>
 
 ### Notes
 It took several iterations to get the web view to pull data from the API and properly display the movie.
@@ -36,7 +36,7 @@ It took several iterations to get the web view to pull data from the API and pro
 - [ ] (1pt) Run your app on a real device.
 
 ### App Walkthrough GIF
-<img src="http://g.recordit.co/a4wppVHj1j.gif" width=250><br>
+<img src="http://g.recordit.co/lGgAsa1pza.gif" width=250><br>
 
 ### Notes
 Initially I was encountering key value not present errors. I was able to get around this by recreating the view controller file.
